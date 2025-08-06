@@ -3,6 +3,8 @@ import {connectAuthEmulator, getAuth} from "firebase/auth";
 import {connectFirestoreEmulator, getFirestore} from "firebase/firestore";
 import {connectStorageEmulator, getStorage} from "firebase/storage";
 
+import {seedDB} from "./seed";
+
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
   authDomain: import.meta.env.VITE_AUTH_DOMAIN,
@@ -25,3 +27,5 @@ if (window.location.hostname == "localhost") {
   connectFirestoreEmulator(db, "localhost", 8080);
   connectStorageEmulator(storage, "localhost", 9199);
 }
+
+// seedDB();

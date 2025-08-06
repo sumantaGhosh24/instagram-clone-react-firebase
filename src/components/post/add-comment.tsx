@@ -1,4 +1,4 @@
-import {useState, FormEvent} from "react";
+import {useState, type FormEvent} from "react";
 import {arrayUnion, doc, updateDoc} from "firebase/firestore";
 
 import {useFirebase} from "../../firebase/auth-context";

@@ -50,7 +50,7 @@ export default function Comments({
           </button>
         )}
         <p className="text-gray-500 font-medium text-xs mt-2">
-          {formatDistance(posted, new Date())} ago
+          {/* {formatDistance(posted, new Date())} ago */}
         </p>
       </div>
       <AddComment

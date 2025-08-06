@@ -1,4 +1,4 @@
-import {FormEvent, ReactNode, useState} from "react";
+import {type FormEvent, type ReactNode, useState} from "react";
 import {doc, updateDoc} from "firebase/firestore";
 import {X, Upload, UserCog} from "lucide-react";
 import {toast} from "react-toastify";
